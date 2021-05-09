@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<title>Page Title</title>
+<tag name="DocNameColor" value="#000000">
+<tag1 name="DocInfoColor" value="#000000">
+<tag2 name="BorderColor" value="#c0e218">
+<tag3 name="MainColor" value="#000000">
+<tag4 name="InsideColor" value="#000000">
+<tag5 name="HeaderBGColor" value="#c0e218">
+<tag6 name="FooterBGColor" value="#c0e218">
+<tag7 name="AddressColor" value="#000000">
+<tag8 name="TimeColor" value="#000000">
+<tag9 name="IconsColor" value="#c0e218">
+<tag10 name="DocNameSize" value="2.5">
+<tag11 name="DocInfoSize" value="2.5">
+<tag12 name="PatientSize" value="2.5">
+<tag13 name="OutsideSize" value="12.0">
+<tag14 name="InsideSize" value="12.0">
+<tag15 name="AddressSize" value="2.0">
+<tag16 name="TimeSize" value="2.0">
+<tag17 name="LogoIcon" value="heart">
+<tag18 name="AddressIcon" value="Compass">
+<tag19 name="TimeIcon" value="HourGlass">
+<tag20 name="PhoneIcon" value="Phone">
+<tag21 name="SocialIcon" value="Whatsapp">
+<tag22 name="AlertIcon" value="Exclamation+Triangle">
+<tag23 name="FontType" value="Almarai">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="fontawesome/css/brands.css" rel="stylesheet">
+<link href="fontawesome/css/solid.css" rel="stylesheet">
+<style>
+  :root { 
+  --heart:#336699;
+  --heart1:#02aeec;
+  --heart2:#fe5500;
+  --heart3:#74b911;
+  --heart4:#ec1500;
+  --medic:#0174cf;
+  --medic1:#01abe9;
+  --medic2:#ff6f00;
+  --medic3:#ff7a03;
+  --medic4:#01abe9;
+  --medic5:#00abe7;
+  --eye:#283c83;
+  --eye1:#8dc53e;
+  --eye2:#262760;
+  --eye3:#0a99db;
+  --pregnant:#852990;
+  --pregnant1:#8c2f48;
+  --MomChild:#049cdb;
+  --MomChild1:#eb098d;
+  --brain1:#0b3978;
+  --brain2:#5e2f95;
+  --stomach:#125eac;
+  --chest:#dc6b74;
+  --chest1:#04a8be;
+  --chest2:#ed7d1c;
+  }
+body {
+	font-family: Almarai;
+	font-size:2.5vw;
+}
+.rosh-layout{
+    max-width: 100%;
+	max-height: 100%;
+    margin: 0;
+    font-size:2.5vw;
+    font-family: Almarai;
+}
+.maintable{
+	height:100%;
+	table-layout:fixed;
+}
+.rosh-layout table {
+	border: 0px solid black;
+    width: 100%;
+    text-align: center;
+	table-layout:fixed; 
+}
+.rosh-layout table td {
+	border: 0px solid black;
+    padding: 2px;  
+}
+.headright{
+	width:45%;
+	height:28.55782960495002vh;
+	text-align: center;
+	color: black;
+	border-bottom-left-radius:20px;
+}
+h1.doc{
+	font-size:3vw;
+	padding:0;
+	margin:0;
+}
+p.info1{
+	font-size: 1.9vw;
+	margin:0;
+	padding:0;
+}
+p.info2{
+	font-size: 1.9vw;
+	margin:0;
+}
+.headleft{
+	width:45%;
+	text-align: center;
+}
+.leftpatient{
+	text-align:left;
+}
+.rightpatient{
+	text-align:right;
+}
+ul {
+	list-style-type: none;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	margin:0;
+	padding:0;
+  color: #000000;
+}
+ul li{
+	direction:ltr;
+	display: table-cell;
+	width: 50%;
+  font-size: 15.0px;
+}
+ol{
+	list-style-type: none;
+	padding-left:1px;
+	margin-top:40%;
+  color: #000000;
+}
+ol li{
+	padding-left:0;
+  font-size: 15.0px;
+}
+@font-face {
+	font-family: Tajawal-Bold;
+	src: url('Tajawal-Bold.ttf')  format("truetype");
+	font-weight: bold;
+}
+@font-face {
+  font-family: Almarai;
+  src: url('sources/Almarai-Regular.ttf')  format("truetype");
+}
+.rosheta{
+	vertical-align: top;
+	width:70%;
+}
+.address{
+	text-align:right;
+}
+.appoints{
+	text-align:right;
+}
+.address:before {
+	content: url(pin.png);
+}
+.appoints:before {
+	text-align:right;
+	content: url(paint.png);
+}
+.footer{
+	direction:rtl;
+	height: auto;
+	bottom:0;
+	height:16.658733936220845vh;
+}
+.vl {
+  border-left: 1px dashed #07689f;
+  height: 80%;
+}
+
+</style>
+</head>
+<body>
+<div class="rosh-layout">
+<table class="maintable" dir="rtl" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+<tbody>
+  <tr>
+	<td>
+	<table>
+	<tr>
+	<td class="headright"></td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+  <tr>
+    <td><table >
+	<tr>
+	<td class="rightpatient" dir='ltr'>
+	</td>
+	</tr>
+	</table></td>
+</tr>
+<tr><td><div class="ho1"></div></td>
+  </tr>
+  <tr height="100%">
+    <td>
+	<table height="100%" style="table-layout: fixed;width:100%;">
+	<tr>
+	<td dir='ltr' style="text-align:left;margin-left:0;vertical-align: top;word-wrap: break-word">
+	<div>
+	<ol><li>معاينة</li><li>معاينة</li><li>معاينة</li></ol>
+	</div>
+	</td>
+	<td width="8px"><div class="vl"></div></td>
+    <td class="rosheta">
+	<table>
+<tbody>
+  <tr>
+    <td dir='ltr' style="text-align:left;margin-left:0;vertical-align: top;word-wrap: break-word">
+  <ul><li>معاينة</li><li>معاينة</li><li>معاينة</li></ul>
+	</td>
+  </tr>
+</tbody>
+</table>
+	</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+<tr><td><div class="ho1"></div></td>
+  </tr>
+  <tr>
+    <td class="footer">
+	</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
