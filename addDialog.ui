@@ -1,0 +1,2749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>801</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::RightToLeft</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{background: transparent;}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>3</number>
+   </property>
+   <property name="topMargin">
+    <number>3</number>
+   </property>
+   <property name="rightMargin">
+    <number>3</number>
+   </property>
+   <property name="bottomMargin">
+    <number>3</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="maingroup">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox{background-color:#4683ff;border-radius:5px;}
+QWidget{outline:none;}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="sources.qrc">:/MainSources/user.png</pixmap>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="taglabel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::RightToLeft</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel{color:#ffffff;}</string>
+          </property>
+          <property name="text">
+           <string>إضافة حجز جديد</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="sources.qrc">:/MainSources/Wlogo.png</pixmap>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox{border-radius:20px; background-color:#ffffff;}
+QScrollBar:vertical {width: 15px;margin: 15px 3px 15px 3px;border-radius: 4px;} QScrollBar::handle:vertical{min-height: 5px;border-radius: 4px;}
+QScrollBar::sub-line:vertical{margin: 3px 0px 3px 0px;border-image: url(:/MainSources/arroup.png);height: 10px;width: 10px;subcontrol-position: top;subcontrol-origin: margin;}
+QScrollBar::add-line:vertical {margin: 3px 0px 3px 0px;border-image: url(:/MainSources/arrod.png);height: 10px;width: 10px;subcontrol-position: bottom;subcontrol-origin: margin;}
+QDoubleSpinBox{border: 1px solid #c0c4d2;border-radius:2px;}
+QDoubleSpinBox:disabled{color:#cdd0cb}
+QDoubleSpinBox:focus{color:#3578E5;}
+QDoubleSpinBox::up-button {subcontrol-origin: border;
+subcontrol-position: top right;
+border-width: 1px;}
+QDoubleSpinBox::up-arrow {
+image: url(:/MainSources/up.png);
+width: 7px;
+height: 7px;}
+QDoubleSpinBox::down-arrow {
+image: url(:/MainSources/downn.png);
+width: 7px;
+height: 7px;}
+QDoubleSpinBox::down-button {
+subcontrol-origin: border;
+subcontrol-position: bottom right;
+border-width: 1px;}
+QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;}
+QLineEdit:focus{border:1px solid #3578E5;}
+QSpinBox{border: 1px solid #c0c4d2;border-radius:2px}
+QSpinBox:focus{color:#3578E5;}
+QSpinBox::up-button {subcontrol-origin: border;
+subcontrol-position: top right;
+border-width: 1px;}
+QSpinBox::up-arrow {
+image: url(:/MainSources/up.png);
+width: 7px;
+height: 7px;}
+QSpinBox::down-arrow {
+image: url(:/MainSources/downn.png);
+width: 7px;
+height: 7px;}
+QSpinBox::down-button {
+subcontrol-origin: border;
+subcontrol-position: bottom right;
+border-width: 1px;}
+QComboBox QAbstractItemView{border: 0px;selection-background-color: #4683ff;selection-color:#ffffff;}</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="title">
+              <string/>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QGroupBox" name="groupBox_6">
+                <property name="styleSheet">
+                 <string notr="true">QRadioButton::checked{border:1px solid #1089ff;border-bottom:0px;color:#4683ff;}
+QRadioButton{padding:5px;border:1px solid #cdd0cb;border-bottom:0px;color:#686d76;}
+QGroupBox{border-radius:0px;}
+QRadioButton::indicator::unchecked {image: url(:/MainSources/unchecked.png);}
+QRadioButton::indicator:unchecked:hover {image: url(:/MainSources/checkhover.png);}
+QRadioButton::indicator::checked {image: url(:/MainSources/checked.png);}
+QComboBox:enabled{background-color:#ffffff;border: 1px solid #1089ff;color:#4683ff;border-radius:2px;}
+QComboBox:disabled{background-color:#ffffff;border: 1px solid #cdd0cb;color:#cdd0cb;border-radius:2px;}
+QComboBox::drop-down {subcontrol-origin: padding;subcontrol-position: top right;width: 20px;border-top-right-radius: 3px;border-bottom-right-radius: 3px;}
+QComboBox::down-arrow:enabled {image: url(:/MainSources/Down.png);}
+QComboBox::down-arrow:disabled {image: url(:/MainSources/arrowdis.png);}</string>
+                </property>
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8">
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_8">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QRadioButton" name="radiokashf">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>كشف</string>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_5">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QGroupBox:indicator{width:0px;height:0px;}
+QGroupBox:checked{border: 1px solid #1089ff ;border-top:0px;}
+QGroupBox:!checked{border: 0px;background-color:#ffffff;border: 1px solid #cdd0cb ;border-top:0px;}
+</string>
+                     </property>
+                     <property name="title">
+                      <string/>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>true</bool>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_9">
+                      <property name="leftMargin">
+                       <number>9</number>
+                      </property>
+                      <property name="topMargin">
+                       <number>9</number>
+                      </property>
+                      <property name="rightMargin">
+                       <number>9</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>9</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label_2">
+                        <property name="text">
+                         <string>المبلغ</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="pricekashf">
+                        <property name="minimumSize">
+                         <size>
+                          <width>90</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="currentIndex">
+                         <number>-1</number>
+                        </property>
+                        <property name="insertPolicy">
+                         <enum>QComboBox::InsertAtBottom</enum>
+                        </property>
+                        <property name="sizeAdjustPolicy">
+                         <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                        </property>
+                        <property name="frame">
+                         <bool>true</bool>
+                        </property>
+                        <property name="modelColumn">
+                         <number>0</number>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label">
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="sources.qrc">:/MainSources/poundb.png</pixmap>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_9">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <property name="topMargin">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QRadioButton" name="radioest">
+                     <property name="text">
+                      <string>إستشارة</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_8">
+                     <property name="minimumSize">
+                      <size>
+                       <width>150</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QGroupBox:indicator{width:0px;height:0px;}
+QGroupBox:checked{border: 1px solid #1089ff ;border-top:0px;}
+QGroupBox:!checked{border: 0px;background-color:#ffffff;border: 1px solid #cdd0cb ;border-top:0px;}
+
+</string>
+                     </property>
+                     <property name="title">
+                      <string/>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_10">
+                      <item>
+                       <widget class="QLabel" name="label_7">
+                        <property name="text">
+                         <string>المبلغ</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QComboBox" name="priceest">
+                        <property name="minimumSize">
+                         <size>
+                          <width>90</width>
+                          <height>30</height>
+                         </size>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <pointsize>12</pointsize>
+                         </font>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="label_6">
+                        <property name="text">
+                         <string/>
+                        </property>
+                        <property name="pixmap">
+                         <pixmap resource="sources.qrc">:/MainSources/poundb.png</pixmap>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_11">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QRadioButton" name="priceb">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="text">
+                      <string>مخصص</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="groupBox_3">
+                     <property name="styleSheet">
+                      <string notr="true">QGroupBox:indicator{width:0px;height:0px;}
+QGroupBox:checked{border: 1px solid #1089ff ;border-top:0px;}
+QGroupBox:!checked{border: 0px;background-color:#ffffff;border: 1px solid #cdd0cb ;border-top:0px;}
+</string>
+                     </property>
+                     <property name="title">
+                      <string/>
+                     </property>
+                     <property name="checkable">
+                      <bool>true</bool>
+                     </property>
+                     <property name="checked">
+                      <bool>false</bool>
+                     </property>
+                     <layout class="QHBoxLayout" name="horizontalLayout_4">
+                      <property name="leftMargin">
+                       <number>9</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="label_8">
+                        <property name="text">
+                         <string>المبلغ</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="allsum">
+                        <property name="text">
+                         <string>0</string>
+                        </property>
+                        <property name="alignment">
+                         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QGroupBox" name="onoff">
+                        <property name="maximumSize">
+                         <size>
+                          <width>16777215</width>
+                          <height>16777215</height>
+                         </size>
+                        </property>
+                        <property name="styleSheet">
+                         <string notr="true">QGroupBox{background-color:#f93537;border-radius:15px;border:0px;}
+QGroupBox:disabled{background-color:rgb(194, 194, 194);}</string>
+                        </property>
+                        <property name="title">
+                         <string/>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_17">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>9</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>1</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>9</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>1</number>
+                         </property>
+                         <item>
+                          <widget class="QPushButton" name="hide">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton{background-color:transparent;
+border-radius:12px;
+padding:2px;
+border: 0px;
+color:#ffffff;}
+QPushButton::checked {
+border-radius:12px;
+background-color:#fafafa;
+border: 0px;
+color:#fafafa;}</string>
+                           </property>
+                           <property name="text">
+                            <string>OFF</string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checked">
+                            <bool>false</bool>
+                           </property>
+                           <property name="autoDefault">
+                            <bool>false</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="view">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>25</height>
+                            </size>
+                           </property>
+                           <property name="font">
+                            <font>
+                             <weight>75</weight>
+                             <bold>true</bold>
+                            </font>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton{background-color:transparent;
+border-radius:15px;
+padding:2px;
+border: 0px;
+color:#ffffff;}
+QPushButton::checked {
+border-radius:12px;
+background-color:#fafafa;
+border: 0px;
+color:#fafafa;}</string>
+                           </property>
+                           <property name="text">
+                            <string>ON</string>
+                           </property>
+                           <property name="checkable">
+                            <bool>true</bool>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                           <property name="autoDefault">
+                            <bool>false</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_11">
+                <property name="leftMargin">
+                 <number>10</number>
+                </property>
+                <property name="topMargin">
+                 <number>0</number>
+                </property>
+                <item>
+                 <widget class="QGroupBox" name="groupBox">
+                  <property name="styleSheet">
+                   <string notr="true">QComboBox{
+background-color:#ffffff;
+border: 1px;
+border-style: solid;
+border-color: rgb(194, 194, 194);
+border-radius:2px;}
+QComboBox:focus{border:1px solid #3578E5;}
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;}
+QComboBox::down-arrow:enabled {image: url(:/MainSources/Down.png);}
+QComboBox::down-arrow:disabled {image: url(:/MainSources/arrowdis.png);}</string>
+                  </property>
+                  <property name="title">
+                   <string/>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <property name="topMargin">
+                    <number>20</number>
+                   </property>
+                   <item>
+                    <layout class="QFormLayout" name="formLayout">
+                     <property name="horizontalSpacing">
+                      <number>9</number>
+                     </property>
+                     <item row="0" column="0">
+                      <widget class="QLabel" name="labelpainfo">
+                       <property name="styleSheet">
+                        <string notr="true">QLabel{color:#4683ff;padding-top:5px;padding-bottom:5px;}</string>
+                       </property>
+                       <property name="text">
+                        <string>معلومات المريض</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QLabel" name="label_10">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QLabel" name="labelpatientname">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial</family>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>إسم المريض</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="0">
+                      <widget class="QLabel" name="labelage">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial</family>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>السن</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="4" column="1">
+                      <widget class="QSpinBox" name="sAge">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>100</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial Rounded MT Bold</family>
+                         <pointsize>12</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignCenter</set>
+                       </property>
+                       <property name="minimum">
+                        <number>1</number>
+                       </property>
+                       <property name="maximum">
+                        <number>150</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="0">
+                      <widget class="QLabel" name="labelgender">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial</family>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>النوع</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="5" column="1">
+                      <widget class="QComboBox" name="cgender">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>100</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial Rounded MT Bold</family>
+                         <pointsize>12</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>ذكر</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>أنثى</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item row="6" column="0">
+                      <widget class="QLabel" name="labelhala">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial</family>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>الحالة</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="6" column="1">
+                      <widget class="QComboBox" name="social">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>100</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial Rounded MT Bold</family>
+                         <pointsize>12</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>غير معروف</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>متزوج</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>أعزب</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>غير ذلك</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                     <item row="7" column="0">
+                      <widget class="QLabel" name="labelphone">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial</family>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>رقم الهاتف</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="7" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_16">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lPhone">
+                         <property name="minimumSize">
+                          <size>
+                           <width>140</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>140</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial Rounded MT Bold</family>
+                           <pointsize>12</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:0px;}
+QLineEdit:focus{border:1px solid #3578E5;border-left:0px;}</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_19">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-right:0px;}
+QLabel:focus{border:1px solid #3578E5;border-right:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>+02</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_7">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="8" column="0">
+                      <widget class="QLabel" name="labeladdress">
+                       <property name="minimumSize">
+                        <size>
+                         <width>80</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial</family>
+                         <pointsize>12</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                       <property name="text">
+                        <string>العنوان</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="8" column="1">
+                      <widget class="QLineEdit" name="lAddress">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>30</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>16777215</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Arial Rounded MT Bold</family>
+                         <pointsize>12</pointsize>
+                         <weight>50</weight>
+                         <bold>false</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true"/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="9" column="0">
+                      <widget class="QLabel" name="labelpatdata">
+                       <property name="styleSheet">
+                        <string notr="true">QLabel{color:#4683ff;padding-top:5px;padding-bottom:5px;}</string>
+                       </property>
+                       <property name="text">
+                        <string>الحالة البدنية</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="9" column="1">
+                      <widget class="QLabel" name="label_11">
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="10" column="0">
+                      <widget class="QLabel" name="labelheight">
+                       <property name="text">
+                        <string>الطول</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="10" column="1">
+                      <layout class="QFormLayout" name="formLayout_3">
+                       <property name="horizontalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="labelcm">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>30</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:5px;padding-right:5px;border:1px solid #c0c4d2;border-left:0px;border-radius:2px;border-top-left-radius:0px;border-bottom-left-radius:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>cm</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QDoubleSpinBox" name="heightSpinBox">
+                         <property name="minimumSize">
+                          <size>
+                           <width>60</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>60</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QDoubleSpinBox{border-right:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+QDoubleSpinBox:focus{border-right:0px;color:#3578E5;}</string>
+                         </property>
+                         <property name="decimals">
+                          <number>1</number>
+                         </property>
+                         <property name="maximum">
+                          <double>250.000000000000000</double>
+                         </property>
+                         <property name="value">
+                          <double>0.000000000000000</double>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="11" column="0">
+                      <widget class="QLabel" name="labelweight">
+                       <property name="text">
+                        <string>الوزن</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="11" column="1">
+                      <layout class="QFormLayout" name="formLayout_4">
+                       <property name="horizontalSpacing">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>0</number>
+                       </property>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_18">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>30</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:5px;padding-right:5px;border:1px solid #c0c4d2;border-left:0px;border-radius:2px;border-top-left-radius:0px;border-bottom-left-radius:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>kg</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QDoubleSpinBox" name="weightSpinBox">
+                         <property name="minimumSize">
+                          <size>
+                           <width>60</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>60</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QDoubleSpinBox{border-right:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+QDoubleSpinBox:focus{border-right:0px;color:#3578E5;}</string>
+                         </property>
+                         <property name="decimals">
+                          <number>1</number>
+                         </property>
+                         <property name="maximum">
+                          <double>1000.000000000000000</double>
+                         </property>
+                         <property name="value">
+                          <double>0.000000000000000</double>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="12" column="0">
+                      <widget class="QLabel" name="labelsuger">
+                       <property name="text">
+                        <string>قياس السكر</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="12" column="1">
+                      <layout class="QFormLayout" name="formLayout_5">
+                       <property name="horizontalSpacing">
+                        <number>0</number>
+                       </property>
+                       <item row="0" column="0">
+                        <widget class="QLabel" name="label_3">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>30</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:5px;padding-right:5px;border:1px solid #c0c4d2;border-left:0px;border-radius:2px;border-top-left-radius:0px;border-bottom-left-radius:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>mg</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item row="0" column="1">
+                        <widget class="QDoubleSpinBox" name="sugerSpinBox">
+                         <property name="minimumSize">
+                          <size>
+                           <width>60</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>60</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QDoubleSpinBox{border-right:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+QDoubleSpinBox:focus{border-right:0px;color:#3578E5;}</string>
+                         </property>
+                         <property name="decimals">
+                          <number>1</number>
+                         </property>
+                         <property name="maximum">
+                          <double>1000.000000000000000</double>
+                         </property>
+                         <property name="value">
+                          <double>0.000000000000000</double>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="13" column="0">
+                      <widget class="QLabel" name="labelpressure">
+                       <property name="text">
+                        <string>ضغط الدم</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="13" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_13">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_12">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>30</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:5px;padding-right:5px;border:1px solid #c0c4d2;border-left:0px;border-radius:2px;border-top-left-radius:0px;border-bottom-left-radius:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>sys</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QDoubleSpinBox" name="highSpinBox">
+                         <property name="minimumSize">
+                          <size>
+                           <width>60</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>60</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QDoubleSpinBox{border-right:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+QDoubleSpinBox:focus{border-right:0px;color:#3578E5;}</string>
+                         </property>
+                         <property name="decimals">
+                          <number>1</number>
+                         </property>
+                         <property name="maximum">
+                          <double>1000.000000000000000</double>
+                         </property>
+                         <property name="value">
+                          <double>0.000000000000000</double>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_16">
+                         <property name="font">
+                          <font>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:2px;padding-right:2px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>/</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_13">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>30</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:5px;padding-right:5px;border:1px solid #c0c4d2;border-left:0px;border-radius:2px;border-top-left-radius:0px;border-bottom-left-radius:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>dia</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QDoubleSpinBox" name="lowSpinBox">
+                         <property name="minimumSize">
+                          <size>
+                           <width>60</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>60</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QDoubleSpinBox{border-right:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+QDoubleSpinBox:focus{border-right:0px;color:#3578E5;}</string>
+                         </property>
+                         <property name="decimals">
+                          <number>1</number>
+                         </property>
+                         <property name="maximum">
+                          <double>1000.000000000000000</double>
+                         </property>
+                         <property name="value">
+                          <double>0.000000000000000</double>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_6">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="14" column="0">
+                      <widget class="QLabel" name="labeltemp">
+                       <property name="text">
+                        <string>درجة الحرارة</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="14" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_20">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLabel" name="label_24">
+                         <property name="minimumSize">
+                          <size>
+                           <width>30</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>30</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{padding-left:5px;padding-right:5px;border:1px solid #c0c4d2;border-left:0px;border-radius:2px;border-top-left-radius:0px;border-bottom-left-radius:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>°C</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QDoubleSpinBox" name="tempSpinBox">
+                         <property name="minimumSize">
+                          <size>
+                           <width>60</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>60</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial</family>
+                           <pointsize>12</pointsize>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QDoubleSpinBox{border-right:0px;border-top-right-radius:0px;border-bottom-right-radius:0px;}
+QDoubleSpinBox:focus{border-right:0px;color:#3578E5;}</string>
+                         </property>
+                         <property name="decimals">
+                          <number>1</number>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <spacer name="horizontalSpacer_8">
+                         <property name="orientation">
+                          <enum>Qt::Horizontal</enum>
+                         </property>
+                         <property name="sizeHint" stdset="0">
+                          <size>
+                           <width>40</width>
+                           <height>20</height>
+                          </size>
+                         </property>
+                        </spacer>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="1" column="1">
+                      <widget class="QGroupBox" name="errname">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>0</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">QPushButton {
+border-radius:5px;
+background-color: #4683ff;
+color: #ffffff;
+padding-left:10px;
+padding-right:10px;}
+QPushButton::hover {background-color:#568dff;}
+QPushButton:disabled{background-color:#aaaaaa}</string>
+                       </property>
+                       <property name="title">
+                        <string/>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_21">
+                        <property name="leftMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="topMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="rightMargin">
+                         <number>0</number>
+                        </property>
+                        <property name="bottomMargin">
+                         <number>0</number>
+                        </property>
+                        <item>
+                         <widget class="QLineEdit" name="previewname">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>30</height>
+                           </size>
+                          </property>
+                          <property name="focusPolicy">
+                           <enum>Qt::StrongFocus</enum>
+                          </property>
+                          <property name="toolTip">
+                           <string/>
+                          </property>
+                          <property name="statusTip">
+                           <string/>
+                          </property>
+                          <property name="inputMask">
+                           <string/>
+                          </property>
+                          <property name="readOnly">
+                           <bool>false</bool>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="complet">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>25</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>إستكمال البيانات</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="QPushButton" name="trago">
+                          <property name="minimumSize">
+                           <size>
+                            <width>0</width>
+                            <height>25</height>
+                           </size>
+                          </property>
+                          <property name="styleSheet">
+                           <string notr="true">QPushButton {
+border-radius:5px;
+background-color: #ffffff;
+color: #4683ff;
+padding-left:10px;
+padding-right:10px;}
+QPushButton::hover {background-color:#dddddd;}
+QPushButton:disabled{color:#aaaaaa}</string>
+                          </property>
+                          <property name="text">
+                           <string>تراجع</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item row="3" column="1">
+                      <layout class="QHBoxLayout" name="horizontalLayout_15">
+                       <property name="spacing">
+                        <number>0</number>
+                       </property>
+                       <item>
+                        <widget class="QLineEdit" name="lPatientName">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>80</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial Narrow</family>
+                           <pointsize>11</pointsize>
+                           <weight>50</weight>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="toolTip">
+                          <string>الاسم الاول</string>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;border-top-left-radius:0px;border-bottom-left-radius:0px;border-left:0px;}
+QLineEdit:focus{border:1px solid #3578E5;border-left:0px;}</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                         <property name="placeholderText">
+                          <string>...</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_15">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 0px;border-left:0px;border-right:0px;}
+QLabel:focus{border:1px solid #3578E5;border-left:0px;border-left:0px;border-right:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="flPatientName">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>80</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial Narrow</family>
+                           <pointsize>11</pointsize>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="toolTip">
+                          <string>الاسم الثانى</string>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 0px;border-left:0px;border-right:0px;}
+QLineEdit:focus{border:1px solid #3578E5;border-left:0px;border-left:0px;border-right:0px;}</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                         <property name="placeholderText">
+                          <string>...</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_20">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 0px;border-left:0px;border-right:0px;}
+QLabel:focus{border:1px solid #3578E5;border-left:0px;border-left:0px;border-right:0px;}</string>
+                         </property>
+                         <property name="frameShape">
+                          <enum>QFrame::NoFrame</enum>
+                         </property>
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="sPatientName">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>80</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial Narrow</family>
+                           <pointsize>11</pointsize>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="toolTip">
+                          <string>الاسم المتوسط</string>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 0px;border-left:0px;border-right:0px;}
+QLineEdit:focus{border:1px solid #3578E5;border-left:0px;border-left:0px;border-right:0px;}</string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                         <property name="placeholderText">
+                          <string>...</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="label_17">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLabel{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 0px;border-left:0px;border-right:0px;}
+QLabel:focus{border:1px solid #3578E5;border-left:0px;border-left:0px;border-right:0px;}</string>
+                         </property>
+                         <property name="text">
+                          <string>-</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLineEdit" name="fPatientName">
+                         <property name="minimumSize">
+                          <size>
+                           <width>0</width>
+                           <height>30</height>
+                          </size>
+                         </property>
+                         <property name="maximumSize">
+                          <size>
+                           <width>80</width>
+                           <height>16777215</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>Arial Narrow</family>
+                           <pointsize>11</pointsize>
+                          </font>
+                         </property>
+                         <property name="focusPolicy">
+                          <enum>Qt::NoFocus</enum>
+                         </property>
+                         <property name="toolTip">
+                          <string>الاسم الاخير</string>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;border-top-right-radius:0px;border-bottom-right-radius:0px;border-right:0px;}
+QLineEdit:focus{border:1px solid #3578E5;border-right:0px;}</string>
+                         </property>
+                         <property name="inputMask">
+                          <string/>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignCenter</set>
+                         </property>
+                         <property name="readOnly">
+                          <bool>true</bool>
+                         </property>
+                         <property name="placeholderText">
+                          <string>...</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </item>
+                     <item row="2" column="1">
+                      <widget class="QLabel" name="labelerror">
+                       <property name="styleSheet">
+                        <string notr="true">QLabel{color:red;}</string>
+                       </property>
+                       <property name="text">
+                        <string/>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="Line" name="line">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>300</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border:1px solid #eeeeee;
+background-color:#eeeeee;</string>
+                  </property>
+                  <property name="orientation">
+                   <enum>Qt::Vertical</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QTabWidget" name="tabWidget">
+                  <property name="styleSheet">
+                   <string notr="true">QTabWidget:pane{background-color:transparent;border:0px;}
+QComboBox{
+background-color:#ffffff;
+border: 1px;
+border-style: solid;
+border-color: rgb(194, 194, 194);
+border-radius:2px;}
+QComboBox:focus{border:1px solid #3578E5;}
+QComboBox::drop-down {
+subcontrol-origin: padding;
+subcontrol-position: top right;
+width: 20px;
+border-top-right-radius: 3px;
+border-bottom-right-radius: 3px;}
+QComboBox::down-arrow:enabled {image: url(:/MainSources/Down.png);}</string>
+                  </property>
+                  <property name="currentIndex">
+                   <number>0</number>
+                  </property>
+                  <widget class="QWidget" name="tab">
+                   <attribute name="title">
+                    <string>Tab 1</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_18">
+                    <property name="topMargin">
+                     <number>10</number>
+                    </property>
+                    <item>
+                     <widget class="QGroupBox" name="groupBox_7">
+                      <property name="maximumSize">
+                       <size>
+                        <width>280</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QToolButton {icon-size: 12px, 12px;padding-top:6px;border-radius:2px;padding-left:6px;padding-right:6px;}
+QToolButton:hover{border:0px;}
+QMenu {left: 20px;color: #4683ff;font-size: 12px;background-color: #ffffff; }
+QSpinBox {color: #4683ff; background-color:#fcfcfc; selection-background-color: #fcfcfc;selection-color:#000000;}
+QCalendarWidget QWidget{alternate-background-color:#fcfcfc;color: #3171fe; margin-top:10px;padding-bottom:10px;background-color:#ffffff;border-radius:15px;font-size: 12px;}
+#qt_calendar_prevmonth {qproperty-icon:url(:/MainSources/viewd.png);border:0px;}
+#qt_calendar_nextmonth {qproperty-icon: url(:/MainSources/view.png);;border:0px;}
+QAbstractItemView:disabled{font-size: 12px;  color: #ececec; selection-background-color: #3171fe; selection-color: #ffffff;}
+</string>
+                      </property>
+                      <property name="title">
+                       <string/>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_10">
+                       <property name="topMargin">
+                        <number>10</number>
+                       </property>
+                       <item>
+                        <layout class="QFormLayout" name="formLayout_2">
+                         <item row="0" column="0">
+                          <widget class="QLabel" name="label9">
+                           <property name="styleSheet">
+                            <string notr="true">QLabel{color:#4683ff;padding-top:5px;padding-bottom:5px;}</string>
+                           </property>
+                           <property name="text">
+                            <string>اختيار ميعاد الحجز</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="0" column="1">
+                          <widget class="QLabel" name="label_21">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="0">
+                          <widget class="QLabel" name="label14">
+                           <property name="text">
+                            <string>تاريخ الموعد</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="1" column="1">
+                          <widget class="QDateEdit" name="moaddateEdit">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QDateEdit{border:1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;}
+QDateEdit::drop-down {padding-left:2px;image: url(:/MainSources/calendar.png);subcontrol-origin: padding;subcontrol-position:  right;width: 20px;height: 20px;}
+QDateEdit:focus{border:1px solid #3578E5;}
+QDateEdit::drop-down:focus {image: url(:/MainSources/calendarb.png);}</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignCenter</set>
+                           </property>
+                           <property name="accelerated">
+                            <bool>false</bool>
+                           </property>
+                           <property name="showGroupSeparator" stdset="0">
+                            <bool>false</bool>
+                           </property>
+                           <property name="displayFormat">
+                            <string>dd-MM-yyyy</string>
+                           </property>
+                           <property name="calendarPopup">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="0">
+                          <widget class="QLabel" name="label20">
+                           <property name="text">
+                            <string>وقت الموعد</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="2" column="1">
+                          <widget class="QComboBox" name="moadtime">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="3" column="0">
+                          <widget class="QLabel" name="hagzway">
+                           <property name="text">
+                            <string>طريقة الحجز</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="3" column="1">
+                          <widget class="QComboBox" name="waycomboBox">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>30</height>
+                            </size>
+                           </property>
+                           <item>
+                            <property name="text">
+                             <string>الشخص ذاته</string>
+                            </property>
+                           </item>
+                           <item>
+                            <property name="text">
+                             <string>بواسطة الهاتف</string>
+                            </property>
+                           </item>
+                          </widget>
+                         </item>
+                         <item row="5" column="0">
+                          <widget class="QLabel" name="mosbkdaf">
+                           <property name="text">
+                            <string>الدفع المسبق</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="5" column="1">
+                          <widget class="QCheckBox" name="checkpaid">
+                           <property name="text">
+                            <string>تم الدفع</string>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="6" column="0">
+                          <widget class="QLabel" name="takedhagz">
+                           <property name="text">
+                            <string>تأكيد الحجز</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="6" column="1">
+                          <widget class="QCheckBox" name="checkhagz">
+                           <property name="text">
+                            <string>مؤكد</string>
+                           </property>
+                           <property name="checked">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="4" column="0">
+                          <widget class="QLabel" name="label_9">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                         <item row="4" column="1">
+                          <widget class="QLabel" name="label_22">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                  <widget class="QWidget" name="tab_2">
+                   <attribute name="title">
+                    <string>Tab 2</string>
+                   </attribute>
+                   <layout class="QHBoxLayout" name="horizontalLayout_14">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QGroupBox" name="mokhass">
+                      <property name="maximumSize">
+                       <size>
+                        <width>280</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">QGroupBox{background-color:#1089ff;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;margin-top:10px;}
+QGroupBox::title{subcontrol-origin: margin;	
+subcontrol-position: top center;
+border-top-left-radius: 13px;
+
+background-color:#1089ff;
+padding: 2 2px;
+color: #1089ff; }</string>
+                      </property>
+                      <property name="title">
+                       <string>1</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_4">
+                       <property name="leftMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="rightMargin">
+                        <number>0</number>
+                       </property>
+                       <property name="bottomMargin">
+                        <number>5</number>
+                       </property>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_6">
+                         <property name="leftMargin">
+                          <number>15</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>15</number>
+                         </property>
+                         <item>
+                          <spacer name="horizontalSpacer_2">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="adad">
+                           <property name="text">
+                            <string>عدد</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="rowcountlabel">
+                           <property name="font">
+                            <font>
+                             <pointsize>11</pointsize>
+                            </font>
+                           </property>
+                           <property name="text">
+                            <string>0</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </item>
+                       <item>
+                        <widget class="QGroupBox" name="groupBox_9">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton{border:0px;}
+QToolButton{border-radius:17px;background-color:#1089ff;border:2px inset #fcfcfc;}
+QLineEdit{border: 1px;border-style: solid;border-color: rgb(194, 194, 194);border-radius: 2px;}
+QLineEdit:focus{border:1px solid #3578E5;}
+QGroupBox{background-color: #fcfcfc;padding-top:0px;border-radius:0px;border-bottom-right-radius: 80px;border-top-left-radius:80px;}</string>
+                         </property>
+                         <property name="title">
+                          <string/>
+                         </property>
+                         <layout class="QVBoxLayout" name="verticalLayout_7">
+                          <property name="leftMargin">
+                           <number>9</number>
+                          </property>
+                          <property name="rightMargin">
+                           <number>9</number>
+                          </property>
+                          <property name="bottomMargin">
+                           <number>10</number>
+                          </property>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_7">
+                            <property name="leftMargin">
+                             <number>0</number>
+                            </property>
+                            <item>
+                             <widget class="QLineEdit" name="sanf">
+                              <property name="minimumSize">
+                               <size>
+                                <width>0</width>
+                                <height>30</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>16777215</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>Arial</family>
+                                <pointsize>12</pointsize>
+                                <weight>50</weight>
+                                <bold>false</bold>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="placeholderText">
+                               <string>سونار - كشف - قياس سكر</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QDoubleSpinBox" name="sanfprice">
+                              <property name="minimumSize">
+                               <size>
+                                <width>0</width>
+                                <height>30</height>
+                               </size>
+                              </property>
+                              <property name="maximumSize">
+                               <size>
+                                <width>70</width>
+                                <height>16777215</height>
+                               </size>
+                              </property>
+                              <property name="font">
+                               <font>
+                                <family>Arial</family>
+                                <pointsize>12</pointsize>
+                                <weight>50</weight>
+                                <bold>false</bold>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="decimals">
+                               <number>1</number>
+                              </property>
+                              <property name="minimum">
+                               <double>-999.000000000000000</double>
+                              </property>
+                              <property name="maximum">
+                               <double>10000.000000000000000</double>
+                              </property>
+                              <property name="value">
+                               <double>0.000000000000000</double>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QToolButton" name="addbutton">
+                              <property name="minimumSize">
+                               <size>
+                                <width>35</width>
+                                <height>35</height>
+                               </size>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true"/>
+                              </property>
+                              <property name="text">
+                               <string>...</string>
+                              </property>
+                              <property name="icon">
+                               <iconset resource="sources.qrc">
+                                <normaloff>:/MainSources/plus.png</normaloff>:/MainSources/plus.png</iconset>
+                              </property>
+                              <property name="iconSize">
+                               <size>
+                                <width>10</width>
+                                <height>10</height>
+                               </size>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                          <item>
+                           <widget class="QTableWidget" name="pricetable">
+                            <property name="sizePolicy">
+                             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                              <horstretch>0</horstretch>
+                              <verstretch>0</verstretch>
+                             </sizepolicy>
+                            </property>
+                            <property name="maximumSize">
+                             <size>
+                              <width>16777215</width>
+                              <height>16777215</height>
+                             </size>
+                            </property>
+                            <property name="font">
+                             <font>
+                              <family>Arial</family>
+                              <pointsize>12</pointsize>
+                              <weight>75</weight>
+                              <bold>true</bold>
+                             </font>
+                            </property>
+                            <property name="styleSheet">
+                             <string notr="true">QTableWidget{border-radius:0;background-color:transparent;padding-right:2px;padding-left:2px;}
+QTableWidget:item{background-color:#ffffff;margin-bottom:3px;}</string>
+                            </property>
+                            <property name="autoScroll">
+                             <bool>true</bool>
+                            </property>
+                            <property name="editTriggers">
+                             <set>QAbstractItemView::NoEditTriggers</set>
+                            </property>
+                            <property name="selectionMode">
+                             <enum>QAbstractItemView::NoSelection</enum>
+                            </property>
+                            <property name="selectionBehavior">
+                             <enum>QAbstractItemView::SelectRows</enum>
+                            </property>
+                            <property name="showGrid">
+                             <bool>false</bool>
+                            </property>
+                            <attribute name="horizontalHeaderVisible">
+                             <bool>false</bool>
+                            </attribute>
+                            <attribute name="horizontalHeaderHighlightSections">
+                             <bool>false</bool>
+                            </attribute>
+                            <attribute name="verticalHeaderVisible">
+                             <bool>false</bool>
+                            </attribute>
+                            <attribute name="verticalHeaderMinimumSectionSize">
+                             <number>42</number>
+                            </attribute>
+                            <attribute name="verticalHeaderDefaultSectionSize">
+                             <number>42</number>
+                            </attribute>
+                            <attribute name="verticalHeaderHighlightSections">
+                             <bool>false</bool>
+                            </attribute>
+                            <column>
+                             <property name="text">
+                              <string>الصنف</string>
+                             </property>
+                            </column>
+                            <column>
+                             <property name="text">
+                              <string>السعر</string>
+                             </property>
+                            </column>
+                            <column>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </column>
+                            <column>
+                             <property name="text">
+                              <string/>
+                             </property>
+                            </column>
+                           </widget>
+                          </item>
+                          <item>
+                           <layout class="QHBoxLayout" name="horizontalLayout_12">
+                            <property name="topMargin">
+                             <number>10</number>
+                            </property>
+                            <item>
+                             <spacer name="horizontalSpacer_5">
+                              <property name="orientation">
+                               <enum>Qt::Horizontal</enum>
+                              </property>
+                              <property name="sizeHint" stdset="0">
+                               <size>
+                                <width>40</width>
+                                <height>20</height>
+                               </size>
+                              </property>
+                             </spacer>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="egmaly">
+                              <property name="text">
+                               <string>إجمالى</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="sumall">
+                              <property name="font">
+                               <font>
+                                <pointsize>12</pointsize>
+                               </font>
+                              </property>
+                              <property name="styleSheet">
+                               <string notr="true">QLabel{color:#000000;}</string>
+                              </property>
+                              <property name="text">
+                               <string>0</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="d">
+                              <property name="text">
+                               <string/>
+                              </property>
+                              <property name="pixmap">
+                               <pixmap resource="sources.qrc">:/MainSources/poundb.png</pixmap>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </item>
+                         </layout>
+                        </widget>
+                       </item>
+                       <item>
+                        <layout class="QHBoxLayout" name="horizontalLayout_5">
+                         <property name="leftMargin">
+                          <number>15</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>15</number>
+                         </property>
+                         <item>
+                          <spacer name="horizontalSpacer_4">
+                           <property name="orientation">
+                            <enum>Qt::Horizontal</enum>
+                           </property>
+                           <property name="sizeHint" stdset="0">
+                            <size>
+                             <width>40</width>
+                             <height>20</height>
+                            </size>
+                           </property>
+                          </spacer>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="datevie">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="qrr">
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="savebtn">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="font">
+           <font>
+            <family>Arial Rounded MT Bold</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{background-color:#ffffff;
+height:20px;
+width:60px;
+padding:3px;
+border: 2px;
+color:#4683ff;
+border-style: outset;
+border-color: #ffffff;
+border-radius: 3px;}
+QPushButton::hover{
+background-color:#4683ff;
+width:50px;
+padding:3px;
+border: 2px;
+color:#ffffff;
+border-style: inset;
+border-color: #ffffff;
+border-radius: 3px;}
+QPushButton::disabled{
+background-color: rgb(181, 181, 181);
+width:50px;
+padding:3px;
+border: 2px;
+color: rgb(239, 239, 239);
+border-style: inset;
+border-color: rgb(98, 98, 98);
+border-radius: 3px;}</string>
+          </property>
+          <property name="text">
+           <string>حفظ</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="cancelbtn">
+          <property name="font">
+           <font>
+            <family>Arial Rounded MT Bold</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{background-color:#ffffff;
+height:20px;
+width:60px;
+padding:3px;
+border: 2px;
+color:#4683ff;
+border-style: outset;
+border-color: #ffffff;
+border-radius: 3px;}
+QPushButton::hover{
+background-color:#4683ff;
+width:50px;
+padding:3px;
+border: 2px;
+color:#ffffff;
+border-style: inset;
+border-color: #ffffff;
+border-radius: 3px;}
+QPushButton::disabled{
+background-color: rgb(181, 181, 181);
+width:50px;
+padding:3px;
+border: 2px;
+color: rgb(239, 239, 239);
+border-style: inset;
+border-color: rgb(98, 98, 98);
+border-radius: 3px;}</string>
+          </property>
+          <property name="text">
+           <string>إلغاء</string>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>previewname</tabstop>
+  <tabstop>sAge</tabstop>
+  <tabstop>cgender</tabstop>
+  <tabstop>social</tabstop>
+  <tabstop>lPhone</tabstop>
+  <tabstop>lAddress</tabstop>
+  <tabstop>heightSpinBox</tabstop>
+  <tabstop>weightSpinBox</tabstop>
+  <tabstop>sugerSpinBox</tabstop>
+  <tabstop>highSpinBox</tabstop>
+  <tabstop>lowSpinBox</tabstop>
+  <tabstop>tempSpinBox</tabstop>
+  <tabstop>moaddateEdit</tabstop>
+  <tabstop>moadtime</tabstop>
+  <tabstop>waycomboBox</tabstop>
+  <tabstop>checkpaid</tabstop>
+  <tabstop>checkhagz</tabstop>
+  <tabstop>savebtn</tabstop>
+  <tabstop>priceb</tabstop>
+  <tabstop>groupBox_3</tabstop>
+  <tabstop>hide</tabstop>
+  <tabstop>view</tabstop>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>groupBox_8</tabstop>
+  <tabstop>pricetable</tabstop>
+  <tabstop>radioest</tabstop>
+  <tabstop>cancelbtn</tabstop>
+  <tabstop>pricekashf</tabstop>
+  <tabstop>groupBox_5</tabstop>
+  <tabstop>priceest</tabstop>
+  <tabstop>sanfprice</tabstop>
+  <tabstop>sanf</tabstop>
+  <tabstop>addbutton</tabstop>
+  <tabstop>complet</tabstop>
+  <tabstop>radiokashf</tabstop>
+  <tabstop>trago</tabstop>
+ </tabstops>
+ <resources>
+  <include location="sources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>sanf</sender>
+   <signal>returnPressed()</signal>
+   <receiver>sanfprice</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>160</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radiokashf</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_5</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>711</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>724</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>radioest</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_8</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>469</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>priceb</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>groupBox_3</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>243</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
