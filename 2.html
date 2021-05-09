@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<title>Page Title</title>
+<tag name="DocNameColor" value="#ffffff">
+<tag1 name="DocInfoColor" value="#ffffff">
+<tag2 name="BorderColor" value="#1a508b">
+<tag3 name="MainColor" value="#000000">
+<tag4 name="InsideColor" value="#000000">
+<tag5 name="HeaderBGColor" value="#1a508b">
+<tag6 name="FooterBGColor" value="#0e49b5">
+<tag7 name="AddressColor" value="#000000">
+<tag8 name="TimeColor" value="#000000">
+<tag9 name="IconsColor" value="#0e49b5">
+<tag10 name="DocNameSize" value="2.5">
+<tag11 name="DocInfoSize" value="2.5">
+<tag12 name="PatientSize" value="2.5">
+<tag13 name="OutsideSize" value="12.0">
+<tag14 name="InsideSize" value="12.0">
+<tag15 name="AddressSize" value="2.0">
+<tag16 name="TimeSize" value="2.0">
+<tag17 name="LogoIcon" value="medic2_white">
+<tag18 name="AddressIcon" value="Marker">
+<tag19 name="TimeIcon" value="Clock">
+<tag20 name="PhoneIcon" value="Phone+Square">
+<tag21 name="SocialIcon" value="Whatsapp+Square">
+<tag22 name="AlertIcon" value="Exclamation+Triangle">
+<tag23 name="FontType" value="Tajawal-Bold">
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+<link href="fontawesome/css/brands.css" rel="stylesheet">
+<link href="fontawesome/css/solid.css" rel="stylesheet">
+<style>
+:root { 
+	--heart:#336699;
+	--heart1:#02aeec;
+	--heart2:#fe5500;
+	--heart3:#74b911;
+	--heart4:#ec1500;
+	--medic:#0174cf;
+	--medic1:#01abe9;
+	--medic2:#ff6f00;
+	--medic3:#ff7a03;
+	--medic4:#01abe9;
+	--medic5:#00abe7;
+	--eye:#283c83;
+	--eye1:#8dc53e;
+	--eye2:#262760;
+	--eye3:#0a99db;
+	--pregnant:#852990;
+	--pregnant1:#8c2f48;
+	--MomChild:#049cdb;
+	--MomChild1:#eb098d;
+	--brain1:#0b3978;
+	--brain2:#5e2f95;
+	--stomach:#125eac;
+	--chest:#dc6b74;
+	--chest1:#04a8be;
+	--chest2:#ed7d1c;
+	}
+body {
+	font-family: {{fonttyp}};
+	font-size:2.5vw;
+}
+.mainw{color:{{mainw}};}
+.rosh-layout{
+    max-width: 100%;
+	max-height: 100%;
+    margin: 0;
+    font-size:2.5vw;
+    font-family: {{fonttyp}};
+}
+.maintable{
+	height:100%;
+	width: 100%;
+	table-layout:fixed;
+}
+.leftpatient{
+	text-align:left;
+}
+.rightpatient{
+	text-align:right;
+	width: 150px;
+}
+.rosh-layout table {
+	border: 0px solid black;
+    text-align: center;
+	table-layout:fixed; 
+}
+.tabwidth table {
+  border: 0px solid cyan;
+  width:100%;
+  text-align: center;
+  table-layout:fixed; 
+}
+.rosh-layout table td {
+	border: 0px solid black;
+    padding: 2px;
+}
+.vl {
+  border-left: 1px solid {{bordera}};
+  height: 80%;
+}
+ul {
+	list-style-type: none;
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	margin:0;
+	padding:0;
+	color: {{insidea}};
+}
+ul li{
+	direction:ltr;
+	display: table-cell;
+	width: 50%;
+	font-size: {{insize}}px;
+}
+ol{
+	list-style-type: none;
+	padding-left:1px;
+	margin-top:40%;
+	color: {{insidea}};
+}
+ol li{
+	padding-left:0;
+	font-size: {{outsize}}px;
+}
+@font-face {
+	font-family: Tajawal-Bold;
+	src: url('Tajawal-Bold.ttf')  format("truetype");
+	font-weight: bold;
+}
+@font-face {
+	font-family: Almarai;
+	src: url('sources/Almarai-Regular.ttf')  format("truetype");
+}
+.rosheta{
+	vertical-align: top;
+	width:70%;
+}
+h1.doc{
+	color: {{hh}};
+	font-size:{{hsize}}vw;
+	padding:0;
+	margin-top:0;
+}
+p.info1{
+	font-size: {{infosize}}vw;
+	color: {{info}};
+	margin:0;
+	padding:0;
+}
+.box{
+	font-size: {{patsize}}vw;
+}
+.address{
+	text-align:right;
+	font-size: {{addsize}}vw;
+}
+.appoints{
+	text-align:right;
+	font-size: {{timsize}}vw;
+}
+.address:before {
+}
+.appoints:before {
+	text-align:right;
+}
+.phone{
+	font-family: sans-serif;
+	font-variant-numeric: normal;
+	font-size: {{timsize}}vw;
+	color: #ffffff;
+}
+.phone:before{
+	text-align:right;
+}
+#demo {
+    text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+span.mall {
+    width: 100%;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 250ms linear;
+    color: #ffffff;
+  }
+span.mal {
+    width: 100%;
+    font-size: 18px;
+    background-size: 0 100%;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    transition: 250ms linear;
+  }
+ .word{
+ 	font-size: {{addsize}}vw;
+ }
+</style>
+</head>
+<body>
+<div class="rosh-layout">
+<table class="maintable" dir="rtl" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+<tbody>
+  <tr>
+	<td style="background-color: {{heada}};">
+		<div class="headright" style="float: right;padding-right: 20px;">
+    <h1 class="doc">{{namear}}</h1>
+{{about}}</div>
+<div style="float: left;padding-left: 20px;">
+	<table><tr><td><table><tr><td><span class="mall">{{clitype}}</span></td></tr><tr><td><span class="mal">{{cliname}}</span></td></tr></table></td><td><img src="sources/{{divshape}}.png" width="auto" height="60px"/></td></tr></table>
+</div>
+	</td>
+</tr>
+<tr>
+	<td class="tabwidth">
+		<table style="border-bottom: 1px solid {{bordera}};border-top: 1px solid {{bordera}}">
+	<tr>
+	<td class="rightpatient" dir='ltr'>
+<div class="box"><span class="mainw">Age:</span> {{age}}</div>
+<div class="box" id="demo"><span class="mainw">Diognosis:</span> {{taskhes}}</div>
+	</td>
+	<td class="leftpatient" dir='ltr'>
+<div class="box" id="demo"><span class="mainw">Name:</span> {{paitent}}</div>
+<div class="box"><span class="mainw">Date:</span> {{date}}</div>
+	</td>
+	</tr>
+	</table>
+	</td>
+</tr>
+<tr height="100%">
+    <td class="tabwidth">
+	<table height="100%" style="table-layout: fixed;width:100%;">
+	<tr>
+	<td dir='ltr' style="text-align:left;margin-left:0;vertical-align: top;word-wrap: break-word">
+	<div>
+	{{tahlel}}
+	</div>
+	</td>
+	<td width="8px"><div class="vl"></div></td>
+    <td class="rosheta">
+	<table>
+<thead>
+  <tr>
+    <th style="text-align:left;"><i class="fas fa-prescription fa-2x" style="color:{{iconc}};"></i></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td dir='ltr'>
+  {{new}}
+	</td>
+</tr>
+</tbody>
+</table>
+	</td>
+  </tr>
+</tbody>
+</table>
+</td>
+  </tr>
+  <tr>
+    <td class="word">{{unique}}{{first}}</td>
+    </tr>
+	<tr><td class="tabwidth">
+	<table style="background-color: {{bordera}};">
+<tbody>
+  <tr>
+    <td class="phone"><i {{phoneicon}} style="color:#ffffff;"></i> {{phone1}}</td>
+	<td class="phone"><i {{socialicon}} style="color:#ffffff;"></i> {{phone2}}</td>
+	<td class="phone"><i {{phoneicon}} style="color:#ffffff;"></i> {{phone3}}</td>
+  </tr>
+</tbody>
+</table>
+	</td>
+</tr><tr><td class="address">
+	<i {{addressicon}} style="color:{{iconc}};"></i>
+	<span class="mainw">العنوان:</span><span style="color:{{addressa}};">{{address}}</span>
+	</td></tr>
+	<tr><td class="appoints">
+	<i {{timeicon}} style="color:{{iconc}};"></i>
+	<span class="mainw">المواعيد:</span><span style="color:{{timea}};">{{time}}</span>
+	</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
