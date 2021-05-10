@@ -9,3 +9,4 @@
 5. pip install bs4
 
 Main File : Loader or doctorclinic
+يتم فك الضغط عن فولدر فونت اوسم فى الفولدرات الفرعية
